@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- style sheet -->
+   <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+       
+        <div class="row">
+          <div class="col-md-4">
+            <div class="justify-content-center align-items-center m-5">
+              <img src="images/mac.png" alt="" class="w-100" />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="justify-content-center align-items-center  m-5">
+              <h1>Customize your Blue 24-inch iMac with Apple M1 Chip</h1>
+              <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+              <div class="mt-5">
+                  <h4>Memory</h4>
+                  <button type="button" class="btn btn-outline-dark" id="eight">8GB unified Memory</button>
+                  <button type="button" class="btn btn-outline-dark" id="sixteen">16GB unified Memory</button>
+              </div>
+              <div class="mt-5">
+                  <h4>Storage</h4>
+                  <button type="button" class="btn btn-outline-dark" id="twoFiftySix">256GB SSD Storage</button>
+                  <button type="button" class="btn btn-outline-dark" id="fiveTwelve">512GB SSD Storage</button>
+                  <button type="button" class="btn btn-outline-dark" id="oneTera">1TB SSD Storage</button>
+                  
+              </div>
+              <div class="mt-5">
+                  <h4>Choose Your Delivery Option</h4>
+                  <button type="button" class="btn btn-outline-dark" id="free">Friday, Aug 25 FREE Prime Delivery</button>
+                  <button type="button" class="btn btn-outline-dark" id="express">Friday, Aug 21 Delivery Charge 20$</button>                  
+              </div>
+              <div class="mt-5 justify-content-center align-items-center">                 
+                <h4  >
+                    Best Price - $ <span id="price">1299</span>
+                </h4> 
+
+               <h4  >
+                    Extra Memory Cost - $<span id="memory">0</span>
+                </h4>   
+
+                <h4  >
+                    Extra Storage Cost - $<span id="storage">0</span>
+                </h4>     
+
+                <h4  >
+                    Delivery Charge - $<span id="delivery">0</span>
+                </h4>
+                                
+                <h4  > 
+                    Total Price - $<span id="totalPrice">1299</span>
+                </h4> 
+               
+                <p>Add Promo Code</p>
+                <input type="text" id = "couponInput">
+                <button class="btn btn-danger" onclick="handleCouponCode()">Apply</button>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+        <hr>
+        <h1 class="text-center">Total: $<span id="grandTotal">1299</span></h1>
+      </div>
+
+   <script src="app.js"></script> 
+</body>
+</html>
